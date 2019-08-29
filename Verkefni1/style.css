@@ -16,13 +16,17 @@ body {
 }
 .menu {
     background: 2em;
-    background-color: wheat;
-    border: 12px solid wheat;
+    background-color:  darkblue;
+    border: 15px solid darkblue;
     border-radius: 5px;
     color: aliceblue;
     margin: 0.5em;
 
 }
+#uf{
+    color:darkred;
+}
+
 #button {
     background-color: aliceblue;
     border: 9px solid aliceblue;
@@ -34,8 +38,8 @@ body {
     
 }
 #button:hover {
-    background-color: rgb(229, 199, 143);
-    border: 9px solid rgb(229, 199, 143);
+    background-color: rgb(108, 110, 238);
+    border: 12px solid rgb(108, 110, 238);
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
@@ -71,5 +75,8 @@ center{
     color: blue;
 }
 #Elvis {
+    color: red;
+}
+#body-texti {
     color: red;
 }
