@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 1em auto;
+    max-width: 60em;
+    background-color: beige;
+    border: 1px solid gray;
+    padding: 1em;
+}
+
+.haus {
+    grid-area: haus;
+    
+}
+.topnav {
+    grid-area: topnav;
+    
+}
+.content {
+    grid-area: content;
+    
+}
+.foot {
+    grid-area: foot;
+    display: grid;
+    
+    
+}
+.as1 {
+    grid-area: as1;
+
+}
+.as2 {
+    grid-area: as2;
+}
+.art1 {
+    grid-area: art1;
+}
+/*-- Template Area --*/ 
+.container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+        "topnav"
+        "haus" 
+        "content"
+        "foot"
+             
+}
+.content {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+    "art1 as1 as2";
+    grid-template-columns: 4fr 2fr 1fr;
+    
+}
+/*-- top menu --*/
+.topmenu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+   
+    
+}
+.topmenu li {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+/* Vinnugögn */
+.haus, .main, .art1, .as1, .as2 {
+    border: 1px solid gray;
+}
