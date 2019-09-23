@@ -4,9 +4,9 @@
 body {
     margin: 1em auto;
     max-width: 60em;
-    background-color: beige;
-    border: 1px solid gray;
-    padding: 1em;
+    background-color: #ffffff;
+    border: 2px solid black;
+   
 }
 
 .haus {
@@ -21,9 +21,9 @@ body {
     grid-area: content;
     
 }
-.foot {
-    grid-area: foot;
-    display: grid;
+.footnav {
+    grid-area: footnav;
+    
     
     
 }
@@ -38,14 +38,14 @@ body {
     grid-area: art1;
 }
 /*-- Template Area --*/ 
-.container {
+.body {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0;
     grid-template-areas: 
-        "topnav"
         "haus" 
+        "topnav"
         "content"
-        "foot"
+        "footnav"
              
 }
 .content {
@@ -53,26 +53,46 @@ body {
     grid-gap: 1em;
     grid-template-areas: 
     "art1 as1 as2";
-    grid-template-columns: 4fr 2fr 1fr;
+    grid-template-columns: 3fr 0.5fr 1fr;
+    padding: 1em;
+}
+.haus {
+    padding: 1em;
     
 }
-/*-- top menu --*/
-.topmenu {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+
+.content, .footnav, .haus, .main, .topmenu{
+    background-color: #bef3ef 
+}
+.topmenu, .footmenu {
+ display: flex;
+ flex-flow: row;
+ justify-content: space-around;
+ margin: 0;
+ list-style-type: none; 
+ padding: 1em 0;
+ background-color: rgba(0, 17, 255, 0.637);
+ border: 1px solid gray;
+}
+.topmenu li :hover, .footmenu li :hover {
+    color: #bef3ef;
+    font-size: 1.1em;
+}
+
+/*-- text style --*/
+ h1 {
+     font-size: 3em;
+     font-family: 'Big Shoulders Display', cursive;
+     margin: 0;
+ }
+    
+
    
-    
-}
-.topmenu li {
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-}
+
+
+
+
 /* Vinnugögn */
-.haus, .main, .art1, .as1, .as2 {
-    border: 1px solid gray;
+.haus, .main, .art1, .as1, .as2, .topmenu, .footmenu {
+    -border: 1px solid gray;
 }
