@@ -74,11 +74,16 @@ body {
  background-color: rgba(0, 17, 255, 0.637);
  border: 1px solid gray;
 }
+.topmenu li a {
+    color: #bef3ef;
+    font-size: 1.1em;
+    text-decoration: none;
+}
 .topmenu li :hover, .footmenu li :hover {
     color: #bef3ef;
     font-size: 1.1em;
+    text-decoration: underline;
 }
-
 /*-- text style --*/
  h1 {
      font-size: 3em;

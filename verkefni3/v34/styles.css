@@ -4,8 +4,8 @@
 body {
     margin: 1em auto;
     max-width: 60em;
-    background-color: beige;
-    border: 1px solid gray;
+    background-color: rgb(0, 0, 0);
+    
     padding: 0.5em;
 }
 
@@ -23,9 +23,7 @@ body {
 }
 .footnav {
     grid-area: footnav;
-    
-    
-    
+
 }
 .as1 {
     grid-area: as1;
@@ -42,8 +40,8 @@ body {
     display: grid;
     grid-gap: 0;
     grid-template-areas: 
-        "topnav"
         "haus" 
+        "topnav"
         "content"
         "footnav"
              
@@ -62,20 +60,44 @@ body {
  justify-content: space-around;
  margin: 0;
  padding: 1em 0;
- background-color: #ddd;
- border: 1px solid gray;
+ background-color: rgb(56, 54, 54);
+ border: 1px solid rgb(24, 23, 23);
  list-style-type: none; 
  
 }
 
-/*-- top menu --*/
-
+.topmenu li a {
+    color: #ff0000;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.topmenu li :hover, .footmenu li :hover {
+    color: #000000;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
    
-
+p, h1,h2,h3,h4,h5,h6{
+    color: white;
+}
+blockquote{
+    color: gray;
+}
+h1,h2,h3{
+    color: red;
+    font-family: 'Titillium Web', sans-serif;
+}
+.undir{
+    color: rgba(245, 71, 71, 0.63);
+}
+p{
+    font-family: 'Grenze', serif;
+    
+}
 
 
 
 /* Vinnugögn */
 .haus, .main, .art1, .as1, .as2, .topmenu, .footmenu {
-    -border: 1px solid gray;
+    
 }

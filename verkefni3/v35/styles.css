@@ -4,11 +4,14 @@
 body {
     margin: 1em auto;
     max-width: 60em;
-    background-color: beige;
-    border: 1px solid gray;
+    
+   
     padding: 0.5em;
 }
-
+.content, .footnav, .haus, .main, .topmenu{
+    background-color: #bad6d4;
+    
+}
 .haus {
     grid-area: haus;
     
@@ -42,8 +45,8 @@ body {
     display: grid;
     grid-gap: 0;
     grid-template-areas: 
-        "topnav"
         "haus" 
+        "topnav"
         "content"
         "footnav"
              
@@ -52,27 +55,55 @@ body {
     display: grid;
     grid-gap: 1em;
     grid-template-areas: 
-    "as1 art1 as2";
-    grid-template-columns: 1fr 3fr 1fr;
-    
+    "art1 as1"
+    "art1 as2";
+    grid-template-columns: 2fr 1fr;
+    padding: 1em;
 }
 .topmenu, .footmenu {
- display: flex;
- flex-flow: row;
- justify-content: space-around;
- margin: 0;
- padding: 1em 0;
- background-color: #ddd;
- border: 1px solid gray;
- list-style-type: none; 
- 
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0em;
+    padding: 1em 0;
+    background-color: rgb(96, 131, 139);
+    border: 1px solid gray;
+    list-style-type: none; 
+    
+   }
+   .topmenu li a {
+       color: #bef3ef;
+       font-size: 1.1em;
+       text-decoration: none;
+   }
+   .topmenu li :hover, .footmenu li :hover {
+       color: #bef3ef;
+       font-size: 1.1em;
+       text-decoration: underline;
+   }
+
+h1{
+    font-size: 3.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(255, 255, 224), rgb(255, 255, 0),rgb(235, 235, 135));
+    border: linear-gradient(rgb(255, 255, 224), rgb(255, 255, 0),rgb(235, 235, 135)) solid 0.1em;
+    border-radius: 0.2em;
+    font-family: 'Notable', sans-serif;
 }
-
-/*-- top menu --*/
-
-   
-
-
+linearGradient(yellow)
+h2,h3{
+    margin: 1em;
+    font-family: 'Oxygen', sans-serif;  
+}
+p {
+    margin: 1em;
+    font-family: 'Barlow', sans-serif;
+}
+.haus {
+    padding: 1em;
+}
 
 
 /* Vinnugögn */

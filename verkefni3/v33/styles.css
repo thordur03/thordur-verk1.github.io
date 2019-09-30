@@ -4,11 +4,14 @@
 body {
     margin: 1em auto;
     max-width: 60em;
-    background-color: beige;
+    background-color:  rgba(242, 201, 220, 1); 
+    
     border: 1px solid gray;
-    padding: 0.5em;
+    padding: 0em;
 }
-
+h1{
+    font-size: 3em;
+}
 .haus {
     grid-area: haus;
     
@@ -42,11 +45,17 @@ body {
     display: grid;
     grid-gap: 0;
     grid-template-areas: 
-        "topnav"
         "haus" 
+        "topnav"
         "content"
         "footnav"
              
+}
+.haus {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 .content {
     display: grid;
@@ -56,26 +65,58 @@ body {
     grid-template-columns: 1fr 3fr 1fr;
     
 }
+.footnav, .haus, .main, .topmenu{
+    background-color: rgb(216, 118, 182); ; 
+    
+}
+.as1, .as2{
+background-color: rgba(216, 97, 163, 1);
+margin: 1em;
+padding: 1em;
+}
+.art1{
+    background-color: rgba(216, 73, 166, 1);
+    padding: 1em;
+    margin: 1em;
+}
 .topmenu, .footmenu {
  display: flex;
  flex-flow: row;
  justify-content: space-around;
- margin: 0;
+ margin: 0em;
  padding: 1em 0;
- background-color: #ddd;
+ background-color: rgba(216, 145, 178, 1);
  border: 1px solid gray;
  list-style-type: none; 
  
 }
+.topmenu li a {
+    color: #bef3ef;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.topmenu li :hover, .footmenu li :hover {
+    color: #bef3ef;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
 
-/*-- top menu --*/
+h1, h2, h3 {
+    color: rgb(117, 4, 121);
+    font-family: 'Amatic SC', cursive;
+}  
 
-   
-
-
+p {
+    font-family: 'Mansalva', cursive;
+    
+}
 
 
 /* Vinnugögn */
 .haus, .main, .art1, .as1, .as2, .topmenu, .footmenu {
     -border: 1px solid gray;
 }
+
+
+
+

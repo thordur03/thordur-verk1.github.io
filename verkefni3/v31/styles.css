@@ -4,14 +4,25 @@
 body {
     margin: 1em auto;
     max-width: 60em;
-    background-color: beige;
-    border: 1px solid gray;
+    background-color: rgb(0, 0, 0);
     padding: 0.5em;
+    
 }
-.h1, .h2, .h3 {
+.content, .footnav, .haus, .main, .topmenu{
+    background-color: #212126 
+}
+h1, h2,h3 {
     font-family: 'Roboto', sans-serif;
+    color: white;
+      
 }
-
+blockquote {
+    color: white;
+}
+p{
+    color: white;
+    margin: 1em;
+}
 .haus {
     grid-area: haus;
     
@@ -45,8 +56,8 @@ body {
     display: grid;
     grid-gap: 0;
     grid-template-areas: 
-        "topnav"
         "haus" 
+        "topnav"
         "content"
         "footnav"
              
@@ -65,15 +76,33 @@ body {
  justify-content: space-around;
  margin: 0;
  padding: 1em 0;
- background-color: #ddd;
+ background-color: #18181B;
  border: 1px solid gray;
  list-style-type: none; 
  
 }
 
-/*-- top menu --*/
+.topmenu li a {
+    color: #ffffff;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.topmenu li :hover, .footmenu li :hover {
+    color: #B38BEE;
+    font-size: 1.1em;
+    text-decoration: none;   
+}
 
+h1{
+    color: white;
+    font-size: 1em;
+    padding: 1em;
+    margin-right: 55em;    
+    background-color: #9147FF;
+    border: #9147FF solid 0.1em;
+    border-radius: 1em;
    
+}
 
 
 
