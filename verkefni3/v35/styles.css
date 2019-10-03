@@ -90,23 +90,24 @@ h1{
     background: linear-gradient(rgb(255, 255, 224), rgb(255, 255, 0),rgb(235, 235, 135));
     border: linear-gradient(rgb(255, 255, 224), rgb(255, 255, 0),rgb(235, 235, 135)) solid 0.1em;
     border-radius: 0.2em;
-    font-family: 'Notable', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 linearGradient(yellow)
 h2,h3{
     margin: 1em;
-    font-family: 'Oxygen', sans-serif;  
+    
+    font-family: 'Roboto', sans-serif
 }
 p {
     margin: 1em;
-    font-family: 'Barlow', sans-serif;
+    font-family: Arial;  
+}
+blockquote{
+    font-family: 'Mansalva', cursive;
 }
 .haus {
     padding: 1em;
 }
 
 
-/* Vinnugögn */
-.haus, .main, .art1, .as1, .as2, .topmenu, .footmenu {
-    -border: 1px solid gray;
-}
+

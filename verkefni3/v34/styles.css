@@ -85,19 +85,24 @@ blockquote{
 }
 h1,h2,h3{
     color: red;
-    font-family: 'Titillium Web', sans-serif;
+    
 }
 .undir{
     color: rgba(245, 71, 71, 0.63);
 }
-p{
+h1{
     font-family: 'Grenze', serif;
-    
+}
+h2, h3 {
+    font-family: 'Titillium Web', sans-serif;
+}
+blockquote {
+    font-family: 'Great Vibes', cursive;
+}
+p{
+    font-family: 'Mansalva', cursive;
 }
 
 
 
-/* Vinnugögn */
-.haus, .main, .art1, .as1, .as2, .topmenu, .footmenu {
-    
-}
+
