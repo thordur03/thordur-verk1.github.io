@@ -59,7 +59,8 @@ h1{
 }
 .content {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0;
+    margin: 1em;  
     grid-template-areas: 
     "art1 art1"
     "as2 as1";
@@ -72,13 +73,13 @@ h1{
 }
 .as1, .as2{
 background-color: rgba(216, 97, 163, 1);
-margin: 1em;
+margin: 0.1em;
 padding: 1em;
 }
 .art1{
     background-color: rgba(216, 73, 166, 1);
     padding: 1em;
-    margin: 1em;
+    margin-bottom: 0.3em;
 }
 .topmenu, .footmenu {
  display: flex;
