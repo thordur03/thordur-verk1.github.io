@@ -67,8 +67,9 @@ p{
     display: grid;
     grid-gap: 1em;
     grid-template-areas: 
-    "as1 art1 as2";
-    grid-template-columns: 1fr 3fr 1fr;
+    "as1 as2"
+    "art1 art1";
+    grid-template-columns: 1fr 1fr;
     
 }
 .topmenu, .footmenu {
