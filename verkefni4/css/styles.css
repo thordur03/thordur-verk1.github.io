@@ -4,22 +4,40 @@ body {
     margin: 0; /* tek út sjálgefið 10px margin */
     /* font-family: ;*/
     font: 400 1em/1.5 'Open Sans', sans-serif; /* samsett skipun: weight/height, size, family */
-    background-color: blue; 
+    background-color: darkblue; 
 }
 .headcolor, .footcolor{
     color: white;
 }
 h1 {
-    font-weight: 300;
+    font-weight: 300;   
     font-size: 2.5em;
 }
 .bground {
-    background-image: linear-gradient(rgb(252, 211, 99),rgb(252, 224, 149));
+    background-image: linear-gradient(to right, rgb(252, 211, 99),rgb(248, 222, 150), rgb(233, 226, 190));
 }
 .container {
     max-width: 60em; /*960px = fartölvur*/
     margin: 0 auto; /* top+bottom og left+right */
     padding: 0;
+}
+.topbutt {
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 100%;
+    padding: 0 .5em;
+    font-size: 2em;
+    color: #ffffff;
+    border: 2px solid #1818af;
+    background-color: #1818af;
+    text-decoration: none;
+    
+}
+.topbutt:active{
+    background-color: rgb(164, 164, 238);
+    border: 3px solid #1818af;
 }
 /* grid */
 blockquote {
@@ -68,4 +86,36 @@ blockquote {
 .topnav a {
     padding-right: 3em;
     padding-left: 2em;
+}
+.innermenu {
+    display: flex;
+    flex-flow: row; 
+    justify-content: center;
+    padding-top: 1em;
+}
+.innermenu a {
+    background-color: darkblue;
+    text-decoration: none;
+    color: rgb(255, 220, 275);
+    padding: .5em 1em;
+    border-right: 1px solid #fff;
+}
+.innermenu a:hover,
+.innermenua:active {
+    color:darkblue;
+    background-color: rgb(255, 220, 275);
+
+}
+.innermenu a:last-child {
+    border: 0;
+}
+.marginb {
+    margin-bottom: 1em;
+}
+.copy{
+    color: rgb(255,220,175);
+    text-align: center;
+}
+.vheight {
+    
 }
