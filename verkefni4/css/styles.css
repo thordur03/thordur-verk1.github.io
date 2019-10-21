@@ -13,8 +13,16 @@ h1 {
     font-weight: 300;   
     font-size: 2.5em;
 }
+html{
+    scroll-behavior: smooth;
+}
+.topfix {
+    padding: 1em;
+}
 .bground {
     background-image: linear-gradient(to right, rgb(252, 211, 99),rgb(248, 222, 150), rgb(233, 226, 190));
+    
+    
 }
 .container {
     max-width: 60em; /*960px = fartölvur*/
@@ -39,6 +47,7 @@ h1 {
     background-color: rgb(164, 164, 238);
     border: 3px solid #1818af;
 }
+
 /* grid */
 blockquote {
     background-color: wheat;
@@ -117,5 +126,8 @@ blockquote {
     text-align: center;
 }
 .vheight {
-    
+    height: 100vh;
+}
+.outerlinks li{
+    text-decoration: none;
 }
