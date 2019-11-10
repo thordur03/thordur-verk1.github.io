@@ -1,13 +1,21 @@
 * { box-sizing: border-box }
 
+
 body {
+    
     margin: 0; /* tek út sjálgefið 10px margin */
     /* font-family: ;*/
     font: 400 1em/1.5 'Open Sans', sans-serif; /* samsett skipun: weight/height, size, family */
     background-color: darkblue; 
 }
+
+
 .headcolor, .footcolor{
     color: white;
+}
+.face {
+    display: grid;
+    bottom: 0;
 }
 h1 {
     font-weight: 300;   
@@ -15,6 +23,18 @@ h1 {
 }
 html{
     scroll-behavior: smooth;
+}
+.heading {
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 0;
+}
+.logo {
+    width: 90px;
+    height: 120px;
+    margin-top: 3em;
+    margin-right: 2em;
+    
 }
 .topfix {
     padding: 1em;
@@ -128,3 +148,6 @@ blockquote {
 .vheight {
     height: 100vh;
 }
+
+  
+  
