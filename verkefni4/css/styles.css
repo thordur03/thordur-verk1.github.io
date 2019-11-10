@@ -1,6 +1,8 @@
 * { box-sizing: border-box }
 
+
 body {
+    
     margin: 0; /* tek út sjálgefið 10px margin */
     /* font-family: ;*/
     font: 400 1em/1.5 'Open Sans', sans-serif; /* samsett skipun: weight/height, size, family */
@@ -128,3 +130,4 @@ blockquote {
 .vheight {
     height: 100vh;
 }
+
