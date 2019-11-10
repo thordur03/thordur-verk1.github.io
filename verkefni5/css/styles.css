@@ -1,0 +1,153 @@
+* { box-sizing: border-box }
+
+
+body {
+    
+    margin: 0; /* tek út sjálgefið 10px margin */
+    /* font-family: ;*/
+    font: 400 1em/1.5 'Open Sans', sans-serif; /* samsett skipun: weight/height, size, family */
+    background-color: darkblue; 
+}
+
+
+.headcolor, .footcolor{
+    color: white;
+}
+.face {
+    display: grid;
+    bottom: 0;
+}
+h1 {
+    font-weight: 300;   
+    font-size: 2.5em;
+}
+html{
+    scroll-behavior: smooth;
+}
+.heading {
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 0;
+}
+.logo {
+    width: 90px;
+    height: 120px;
+    margin-top: 3em;
+    margin-right: 2em;
+    
+}
+.topfix {
+    padding: 1em;
+}
+.bground {
+    background-image: linear-gradient(to right, rgb(252, 211, 99),rgb(248, 222, 150), rgb(233, 226, 190));
+    
+    
+}
+.container {
+    max-width: 60em; /*960px = fartölvur*/
+    margin: 0 auto; /* top+bottom og left+right */
+    padding: 0;
+}
+.topbutt {
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 100%;
+    padding: 0 .5em;
+    font-size: 2em;
+    color: #ffffff;
+    border: 2px solid #1818af;
+    background-color: #1818af;
+    text-decoration: none;
+    
+}
+.topbutt:active{
+    background-color: rgb(164, 164, 238);
+    border: 3px solid #1818af;
+}
+
+/* grid */
+blockquote {
+    background-color: wheat;
+    -background-image: linear-gradient(rgba(250, 240, 195, 0.7), rgba(255, 255, 255, 0.699)rgba(239, 252, 251, 0.7));
+    padding: 1em;
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.gap-4 {
+    grid-gap: 4em
+}
+.headcolor h1 {
+    margin: 2em 0 1em 0;
+}
+.headcolor p{
+    text-align: right;
+}
+.topnav {
+    margin-top: 4em;
+}
+.topnav a, .footnav a{
+    color: rgb(240, 202, 102);
+    text-decoration: none;
+
+}
+.footnav{
+    padding: 0;
+}
+.footnav li{
+    list-style-type: none;
+    line-height: 2;
+}
+.topnav a {
+    padding-right: 3em;
+    padding-left: 2em;
+}
+.innermenu {
+    display: flex;
+    flex-flow: row; 
+    justify-content: center;
+    padding-top: 1em;
+}
+.innermenu a {
+    background-color: darkblue;
+    text-decoration: none;
+    color: rgb(255, 220, 275);
+    padding: .5em 1em;
+    border-right: 1px solid #fff;
+}
+.innermenu a:hover,
+.innermenua:active {
+    color:darkblue;
+    background-color: rgb(255, 220, 275);
+
+}
+.innermenu a:last-child {
+    border: 0;
+}
+.marginb {
+    margin-bottom: 1em;
+}
+.copy{
+    color: rgb(255,220,175);
+    text-align: center;
+}
+.vheight {
+    height: 100vh;
+}
+
+  
+  
