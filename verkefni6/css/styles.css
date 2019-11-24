@@ -1,0 +1,252 @@
+*, *:before, *:after {
+  box-sizing: border-box; 
+}
+.topnav {
+  grid-area: topnav; 
+  }
+  header {
+  grid-area: header;
+  }
+  main {
+  grid-area: main; 
+  }
+  footer {
+  grid-area: footer;
+  }
+  .midja {
+  grid-area: midja; 
+  }
+  .vinstri {
+  grid-area: vinstri;
+  }
+  .haegri {
+  grid-area: haegri; 
+  }
+
+body {
+display: grid;
+grid-gap: 0; 
+grid-template-areas: 
+"header"
+"main"
+"footer"
+"topnav"  
+;
+background-color: wheat ;
+
+}
+main {
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas: 
+  "vinstri"
+  "midja"
+  "haegri";
+}
+main {
+display: grid; 
+grid-gap: 0;
+
+ 
+}
+
+
+
+body {
+line-height: 1.5em;
+}
+.topnav {
+background: #1c2d1c; 
+}
+header {
+background: tomato; 
+}
+footer {
+background: lightgreen; 
+}
+.midja {
+background: skyblue; 
+}
+.vinstri {
+background: gold; 
+}
+.haegri {
+background: pink; 
+}
+
+header,
+footer,
+.midja,
+.vinstri, 
+.haegri {
+padding: 1em; 
+}
+
+
+
+header h1 {
+color: #fff;
+line-height: 1.2;
+font-weight: normal;
+}
+.midja h2 {
+margin: .7em 0 .8em 0;
+}
+.midja h4 {
+text-align: justify;
+margin: .4em 0;
+}
+.midja p {
+text-align: justify;
+}
+
+
+.topnav ul{
+background: #1c2d1c; 
+}
+.topnav input {
+display: none;
+}
+
+.topmenu {
+display: block;
+padding: 0;
+margin: 0;
+list-style: none; 
+
+}
+.topmenu li {
+border: 0;
+border-bottom: 1px solid lime; 
+padding: 0;
+margin:0;
+}
+.topmenu li {
+border: 0;
+padding: 0;
+border-bottom: 1px solid lime; 
+}
+.topmenu a {
+display: block;     /* ath! */
+color: white;
+text-decoration: none;
+text-align: center;
+padding: .4em 1em; 
+}
+.topmenu a:hover,
+.topmenu a:active,
+.virkur {
+color: black !important;
+background-color: lime;
+}
+
+
+
+img, video {
+max-width: 100%;
+height: auto;
+}
+img {
+display: block;
+}
+
+figure {
+margin:0;   
+border: 1px solid orange;
+}
+.myndabox {
+width: 162px; 
+}
+
+
+@media screen and (min-width: 30em) {
+   
+  }
+
+
+
+
+@media screen and (min-width: 37.5em) {
+    .myndabox {
+      display: grid;
+      grid-template-columns: 5fr 5fr;
+      
+    }
+    main {
+      grid-template-areas: 
+      "vinstri midja"
+      "haegri midja";
+      grid-template-columns: 1fr 2fr;
+    }
+    
+    body {
+      display: grid;
+      grid-gap: 0; 
+      grid-template-areas: 
+      "topnav"
+      "header"
+      "main"
+      "footer"  
+      ;
+    }
+    .topnav ul {
+      display: flex;
+      justify-content: center;
+    } 
+    .topnav li {
+      border: none;
+      border-right: lime 1px solid;
+      border-left: lime 1px solid;
+    } 
+}
+
+
+
+@media screen and (min-width: 48em) {  
+  main {
+    grid-template-areas: 
+    "vinstri midja"
+    "haegri midja";
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  body {
+    display: grid;
+    grid-gap: 0; 
+    grid-template-areas: 
+    "topnav"
+    "header"
+    "main"
+    "footer"  
+    ;
+  }
+  .topnav ul {
+    display: flex;
+    justify-content: center;
+  } 
+  .topnav li {
+    border: none;
+    border-right: lime 1px solid;
+    border-left: lime 1px solid;
+  }
+  }
+
+
+
+@media screen and (min-width: 60em) { 
+  main {
+    grid-template-areas: 
+    "vinstri midja haegri ";
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  }
+  .myndabox {
+    display: grid;
+    grid-template-columns: repeat(4,8em);
+    
+  }
+
+
+@media screen and (min-width: 80em) { 
+ 
+  }

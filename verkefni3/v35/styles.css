@@ -87,7 +87,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(255, 255, 224), rgb(255, 255, 0),rgb(235, 235, 135));
+    background: linear-gradient(rgb(122, 122, 92), rgb(255, 255, 0),rgb(235, 235, 135));
     border: linear-gradient(rgb(255, 255, 224), rgb(255, 255, 0),rgb(235, 235, 135)) solid 0.1em;
     border-radius: 0.2em;
     font-family: 'Oswald', sans-serif;

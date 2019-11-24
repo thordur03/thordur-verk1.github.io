@@ -1,0 +1,123 @@
+* { box-sizing: border-box }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0; /* tek út sjálgefið 10px margin */
+    /* font-family: ;*/
+    font: 400 1em/1.5 'Open Sans',sans-serif; /* samsett skipun: weight/height, size, family */
+    background-color: #202020;
+
+}
+h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+}
+.headcolor, .footcolor,.copy{
+    color: white;
+}
+.bground{
+    background-color:#b6b6b6;
+    padding: 1em;
+    
+}
+blockquote{
+    background-color: rgba(255,255,255,0.3);
+    padding: 1em;
+}
+
+.container {
+    max-width: 60em; /*960px = fartölvur*/
+    margin: 0 auto; /* top+bottom og left+right */
+    padding: 0;
+}
+.topbutt{
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em ;
+    border-radius: 100%; 
+    padding: 0 .4em;
+    text-decoration: none;
+    font-size: 2em;
+    color: rgba(7, 0, 112, 0.829);
+    border: 2px solid rgba(7, 0, 112, 0.829);
+    background-color: rgba(226, 174, 96, 0.973) ;
+}
+/* grid */
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.gap-4 {
+    grid-gap: 4em;
+ }
+ .headcolor h1{
+     margin: 2em,0,1,0;
+ }
+ .headcolor p{
+  text-align: left;
+}
+ .headcolor h1 ,
+ .topnav a,.footnav a{
+     color: #b6b6b6;
+     text-decoration: none;
+ }
+ .topnav a:hover,
+ .footnav a:hover{
+     text-decoration: underline;
+ }
+ .topnav{
+     margin-top: 4em;
+     margin-bottom: 2em ;
+ }
+.footnav li {
+    list-style-type: none;
+    line-height: 2;
+}
+.footnav{
+    padding: 0;
+}
+.topnav a{
+    padding-left: 2em;
+}
+
+.marginbottom{
+    margin: .5em 0 0 0;
+}
+.copy{
+    text-align: center;
+    color: rgb(238, 209, 171);
+}
+.vheigt{
+    height: 100vh;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.flright{
+    float: right;
+}
+.footcol-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+.stortexti{
+    font-size: 5em;
+}
+.margintop{
+    margin: 5em;
+}
